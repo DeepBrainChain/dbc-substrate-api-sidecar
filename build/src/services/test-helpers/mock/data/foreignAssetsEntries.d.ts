@@ -1,0 +1,1 @@
+export declare const foreignAssetsEntries: () => (import("@polkadot/types-codec").Option<import("@polkadot/types/lookup").PalletAssetsAssetDetails> | import("@polkadot/types").StorageKey<import("@polkadot/types-codec/types").AnyTuple>)[][];

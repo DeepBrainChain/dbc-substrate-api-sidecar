@@ -1,0 +1,17 @@
+import { Option, u32, u128 } from '@polkadot/types/';
+import { PalletNominationPoolsBondedPoolInner, PalletNominationPoolsRewardPool } from '@polkadot/types/lookup';
+export declare const getBondedPools: () => Promise<PalletNominationPoolsBondedPoolInner>;
+export declare const getRewardPools: () => Promise<PalletNominationPoolsRewardPool>;
+export declare const getMetadata: () => string;
+export declare const counterForBondedPools: () => Promise<u32>;
+export declare const counterForMetadata: () => Promise<u32>;
+export declare const counterForPoolMembers: () => Promise<u32>;
+export declare const counterForReversePoolIdLookup: () => Promise<u32>;
+export declare const counterForSubPoolsStorage: () => Promise<u32>;
+export declare const counterForRewardPools: () => Promise<u32>;
+export declare const lastPoolId: () => Promise<u32>;
+export declare const maxPoolMembers: () => Promise<u32>;
+export declare const maxPoolMembersPerPool: () => Promise<Option<u32>>;
+export declare const maxPools: () => Promise<u32>;
+export declare const minCreateBond: () => Promise<u128>;
+export declare const minJoinBond: () => Promise<u128>;

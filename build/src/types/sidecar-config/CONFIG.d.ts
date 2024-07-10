@@ -1,0 +1,21 @@
+/**
+ * Names of config env vars of Sidecar.
+ */
+export declare enum CONFIG {
+    BIND_HOST = "BIND_HOST",
+    PORT = "PORT",
+    KEEP_ALIVE_TIMEOUT = "KEEP_ALIVE_TIMEOUT",
+    URL = "URL",
+    LEVEL = "LEVEL",
+    JSON = "JSON",
+    FILTER_RPC = "FILTER_RPC",
+    STRIP_ANSI = "STRIP_ANSI",
+    TYPES_BUNDLE = "TYPES_BUNDLE",
+    TYPES_CHAIN = "TYPES_CHAIN",
+    TYPES_SPEC = "TYPES_SPEC",
+    TYPES = "TYPES",
+    WRITE = "WRITE",
+    WRITE_PATH = "WRITE_PATH",
+    WRITE_MAX_FILE_SIZE = "WRITE_MAX_FILE_SIZE",
+    WRITE_MAX_FILES = "WRITE_MAX_FILES"
+}

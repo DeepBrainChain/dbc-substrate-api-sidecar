@@ -1,0 +1,25 @@
+import type { ApiPromise } from '@polkadot/api';
+import type { GenericExtrinsic, Vec } from '@polkadot/types';
+import type { Option } from '@polkadot/types/codec';
+import type { AccountId, ActiveEraInfo, Block, EraIndex, Extrinsic, Hash, RuntimeDispatchInfo, SessionIndex, StakingLedger } from '@polkadot/types/interfaces';
+export declare const getBlockXCM: (_hash: Hash) => Promise<{
+    block: Block;
+}>;
+export declare const deriveGetBlockXCM: (_hash: Hash) => Promise<{
+    block: Block;
+    author: AccountId;
+}>;
+export declare const activeEraAtXCM: (_hash: Hash) => Promise<Option<ActiveEraInfo>>;
+export declare const erasStartSessionIndexAtXCM: (_hash: Hash, _activeEra: EraIndex) => Promise<Option<SessionIndex>>;
+export declare const bondedAtXCM: (_hash: Hash, _address: string) => Promise<Option<AccountId>>;
+export declare const ledgerAtXCM: (_hash: Hash, _address: string) => Promise<Option<StakingLedger>>;
+export declare const queryInfoCallXCM: (_extrinsic: GenericExtrinsic, _length: Uint8Array) => Promise<RuntimeDispatchInfo>;
+export declare const queryInfoAtXCM: (_extrinsic: string, _hash: Hash) => Promise<RuntimeDispatchInfo>;
+export declare const submitExtrinsicXCM: (_extrinsic: string) => Promise<Hash>;
+export declare const pendingExtrinsicsXCM: () => Promise<Vec<Extrinsic>>;
+export declare const txXCM: () => Extrinsic;
+/**
+ * Mock polkadot-js ApiPromise. Values are largely meant to be accurate for block
+ * #18468942, which is what the XCM test in BlockService use.
+ */
+export declare const mockApiBlock18468942: ApiPromise;

@@ -1,0 +1,50 @@
+import { AccountsAssets, AccountsBalanceInfo, AccountsConvert, AccountsPoolAssets, AccountsProxyInfo, AccountsStakingInfo, AccountsStakingPayouts, AccountsValidate, AccountsVestingInfo } from './accounts';
+import { Blocks, BlocksExtrinsics, BlocksRawExtrinsics, BlocksTrace } from './blocks';
+import { ContractsInk } from './contracts';
+import { NodeNetwork, NodeTransactionPool, NodeVersion } from './node';
+import { PalletsAssetConversion, PalletsAssets, PalletsConsts, PalletsDispatchables, PalletsErrors, PalletsEvents, PalletsForeignAssets, PalletsNominationPools, PalletsPoolAssets, PalletsStakingProgress, PalletsStakingValidators, PalletsStorage } from './pallets';
+import { Paras } from './paras';
+import { RuntimeCode, RuntimeMetadata, RuntimeSpec } from './runtime';
+import { TransactionDryRun, TransactionFeeEstimate, TransactionMaterial, TransactionSubmit } from './transaction';
+/**
+ * Object containing every controller class definition.
+ */
+export declare const controllers: {
+    Blocks: typeof Blocks;
+    BlocksExtrinsics: typeof BlocksExtrinsics;
+    BlocksTrace: typeof BlocksTrace;
+    BlocksRawExtrinsics: typeof BlocksRawExtrinsics;
+    AccountsAssets: typeof AccountsAssets;
+    AccountsBalanceInfo: typeof AccountsBalanceInfo;
+    AccountsConvert: typeof AccountsConvert;
+    AccountsPoolAssets: typeof AccountsPoolAssets;
+    AccountsProxyInfo: typeof AccountsProxyInfo;
+    AccountsStakingInfo: typeof AccountsStakingInfo;
+    AccountsValidate: typeof AccountsValidate;
+    AccountsVestingInfo: typeof AccountsVestingInfo;
+    AccountsStakingPayouts: typeof AccountsStakingPayouts;
+    ContractsInk: typeof ContractsInk;
+    PalletsAssets: typeof PalletsAssets;
+    PalletsAssetConversion: typeof PalletsAssetConversion;
+    PalletsDispatchables: typeof PalletsDispatchables;
+    PalletsConsts: typeof PalletsConsts;
+    PalletsErrors: typeof PalletsErrors;
+    PalletsEvents: typeof PalletsEvents;
+    PalletsForeignAssets: typeof PalletsForeignAssets;
+    PalletsNominationPools: typeof PalletsNominationPools;
+    PalletsPoolAssets: typeof PalletsPoolAssets;
+    PalletsStakingProgress: typeof PalletsStakingProgress;
+    PalletsStakingValidators: typeof PalletsStakingValidators;
+    PalletsStorage: typeof PalletsStorage;
+    NodeNetwork: typeof NodeNetwork;
+    NodeTransactionPool: typeof NodeTransactionPool;
+    NodeVersion: typeof NodeVersion;
+    RuntimeCode: typeof RuntimeCode;
+    RuntimeMetadata: typeof RuntimeMetadata;
+    RuntimeSpec: typeof RuntimeSpec;
+    TransactionDryRun: typeof TransactionDryRun;
+    TransactionFeeEstimate: typeof TransactionFeeEstimate;
+    TransactionMaterial: typeof TransactionMaterial;
+    TransactionSubmit: typeof TransactionSubmit;
+    Paras: typeof Paras;
+};

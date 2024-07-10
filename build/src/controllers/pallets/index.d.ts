@@ -1,0 +1,12 @@
+export { default as PalletsAssetConversion } from './PalletsAssetConversionController';
+export { default as PalletsAssets } from './PalletsAssetsController';
+export { default as PalletsConsts } from './PalletsConstsController';
+export { default as PalletsDispatchables } from './PalletsDispatchablesController';
+export { default as PalletsErrors } from './PalletsErrorsController';
+export { default as PalletsEvents } from './PalletsEventsController';
+export { default as PalletsForeignAssets } from './PalletsForeignAssetsController';
+export { default as PalletsNominationPools } from './PalletsNominationPoolsController';
+export { default as PalletsPoolAssets } from './PalletsPoolAssetsController';
+export { default as PalletsStakingProgress } from './PalletsStakingProgressController';
+export { default as PalletsStakingValidators } from './PalletsStakingValidatorsController';
+export { default as PalletsStorage } from './PalletsStorageController';
