@@ -6,6 +6,7 @@ import { initLRUCache, QueryFeeDetailsCache } from './cache';
  */
 export const dbcControllers: ControllerConfig = {
 	controllers: [
+		'AccountsAssets',
 		'AccountsBalanceInfo',
 		'AccountsValidate',
 		'Blocks',
