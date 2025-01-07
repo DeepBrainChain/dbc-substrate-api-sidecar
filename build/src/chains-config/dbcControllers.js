@@ -8,6 +8,7 @@ const cache_1 = require("./cache");
  */
 exports.dbcControllers = {
     controllers: [
+        'AccountsAssets',
         'AccountsBalanceInfo',
         'AccountsValidate',
         'Blocks',

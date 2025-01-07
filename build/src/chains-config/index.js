@@ -74,7 +74,7 @@ const specToControllerMap = {
     bifrost_polkadot: bifrostPolkadotControllers_1.bifrostPolkadotControllers,
     heiko: heikoControllers_1.heikoControllers,
     parallel: parallelControllers_1.parallelControllers,
-    node: dbcControllers_1.dbcControllers,
+    "DeepBrainChain": dbcControllers_1.dbcControllers,
 };
 /**
  * Return an array of instantiated controller instances based off of a `specName`.
@@ -88,6 +88,7 @@ function getControllersForSpec(api, specName) {
     }
     // If we don't have the specName in the specToControllerMap we use the default
     // contoller config
+    console.warn(`No config found for ${specName}, using default config`)
     return getControllersFromConfig(api, defaultControllers_1.defaultControllers);
 }
 exports.getControllersForSpec = getControllersForSpec;
